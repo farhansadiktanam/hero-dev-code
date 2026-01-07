@@ -26,12 +26,17 @@
   border: none;
   border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Main style */
 
 header {
-  background: #fff8f3;
+  background-color: #fff8f3;
+  background: url("../images/developer.png"), url("../images/header_bg.png"),
+    #fff8f3;
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
   margin-top: 50px;
 }
 
@@ -55,4 +60,43 @@ nav .menu a {
   font-size: 20px;
   text-decoration: none;
   color: #474747;
+}
+
+#banner {
+  /* border: 1px solid red; */
+
+  margin: 47px 38px 0 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#banner .banner-content {
+  max-width: 585px;
+}
+
+#banner .banner-content h2 {
+  font-size: 45px;
+  color: #474747;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#banner .banner-content h1 {
+  font-size: 85px;
+  color: #181818;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+#banner .banner-content p {
+  font-size: 18px;
+  color: #757575;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+#banner .banner-image {
+  max-width: 585px;
+  vertical-align: middle;
 }
